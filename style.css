@@ -1,0 +1,169 @@
+/* Basic page settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+/* Header */
+.header {
+    background: #17324d;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 20px;
+    margin: 8px 0 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+
+/* Sections */
+section {
+    background: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #17324d;
+    border-bottom: 2px solid #17324d;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+
+/* Cards */
+.card,
+.project {
+    background: #f7f9fb;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #17324d;
+    border-radius: 6px;
+}
+
+.card h3,
+.project h3 {
+    margin-top: 0;
+    color: #17324d;
+}
+
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Skills */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skills li {
+    background: #eef3f7;
+    padding: 12px;
+    border-radius: 6px;
+    list-style-position: inside;
+}
+
+
+/* Strength tags */
+.tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    background: #17324d;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 35%;
+    background: #eef3f7;
+}
+
+
+/* Footer */
+footer {
+    background: #17324d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Mobile / narrow screen */
+@media (max-width: 650px) {
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
