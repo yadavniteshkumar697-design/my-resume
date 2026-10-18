@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #243447;
+    background: #eaf4f8;
     max-width: 800px;
     margin: 30px auto;
     padding: 30px;
@@ -142,28 +143,4 @@ footer {
     .contact {
         line-height: 1.8;
     }
-}
-.facts {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.fact {
-    flex: 1;
-    background: #f4f4f4;
-    padding: 16px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.fact b {
-    display: block;
-    font-size: 22px;
-    color: #16324f;
-}
-
-.fact span {
-    font-size: 14px;
-    color: #687782;
 }
